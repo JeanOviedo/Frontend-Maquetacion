@@ -13,12 +13,17 @@ body {
    }
 }
 
-.linea {
-   
-    display: flex;
-    padding-left: 3rem;
-  }
+
+.hr {
+  border-top: 2px solid rgba(207, 207, 207, 0.671);
   
+  padding: 0;
+  margin: 25px ;
+  opacity: 90;
+}
+
+
+
  
   .contain {
     display: flex;
