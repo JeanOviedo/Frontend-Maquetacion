@@ -13,7 +13,6 @@ body {
    }
 }
 
-
 .hr {
   border-top: 2px solid rgba(207, 207, 207, 0.671);
   
@@ -23,7 +22,12 @@ body {
 }
 
 
-
+.linea {
+   
+    display: flex;
+    padding-left: 3rem;
+  }
+  
  
   .contain {
     display: flex;
