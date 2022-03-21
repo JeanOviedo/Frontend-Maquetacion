@@ -4,6 +4,7 @@
         <meta charset="UTF-8"/>
         <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
         <script src="https://cdn.tailwindcss.com"></script>
+        <script src="./js/js.js"></script>
         <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.3.0/font/bootstrap-icons.css"/>
         <link rel="stylesheet" href="./css/style.css"/>
     </head>
@@ -13,16 +14,40 @@
                 <a class="flex title-font font-medium items-center text-gray-900 mb-4 md:mb-0">
                     <span class="ml-3 text-xl">Untitled UI</span>
                 </a>
-                <nav class="md:ml-10 items-center text-base justify-center">
-                    <a class="mr-5 hover:text-gray-900">Home</a>
-                    <a class="mr-5 hover:text-gray-900">Dashboard</a>
-                    <a class="mr-5 hover:text-gray-900">Project</a>
-                    <a class="mr-5 hover:text-gray-900">Reporting</a>
-                    <a class="mr-5 hover:text-gray-900">Users</a>
-                </nav>
-                <button class="inline-flex items-center bg-gray-200 border-0 py-1 px-3 focus:outline-none hover:bg-gray-300 rounded text-base mt-4 md:mt-0">
+              
+
+                <nav  class="md:ml-10" id="menu" >
+                <div class="container mx-auto">
+                  <div class="sm:flex justify-around">
+                    
+                    <ul class="text-gray-400 sm:self-center text-sl border-t sm:border-none">
+                      <li class="sm:inline-block">
+                        <a href="#" class="p-3 hover:text-black">Home</a>
+                      </li>
+                      <li class="sm:inline-block">
+                        <a href="#" class="p-3 hover:text-black">Dashboard</a>
+                      </li>
+                      <li class="sm:inline-block">
+                        <a href="#" class="p-3 hover:text-black">Project</a>
+                      </li>
+                      <li class="sm:inline-block">
+                        <a href="#" class="p-3 hover:text-black">Reporting</a>
+                      </li>
+                      <li class="sm:inline-block">
+                        <a href="#" class="p-3 hover:text-black">Users</a>
+                      </li>
+
+                      <li class="sm:inline-block">
+                        <a href="#" class="p-3 hover:text-black">Get Started</a>
+                      </li>
+                    </ul>
+                  </div>
+                </div>
+              </nav>
+              
+                <!-- <button class="inline-flex items-center  text-base mt-4 md:mt-0">
                     Get Started
-                </button>
+                </button> -->
                 
 
 
@@ -30,17 +55,20 @@
                 
                 <!-- Secondary Navbar items -->
 
-                <div class="flex flex-row md:ml-auto items-center space-x-3 items-center">
+                <div class="flex flex-row md:ml-auto items-center space-x-3 items-center ">
                     <img class="h-8 w-8 rounded-full" src="https://images.unsplash.com/photo-1472099645785-5658abf4ff4e?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=facearea&facepad=2&w=256&h=256&q=80" alt=""/>
                     <div>
                         <i class="bi bi-search"></i>
                     </div>
                     <div>
-                        <i class="bi bi-nut"></i>
+                        <i class="bi bi-nut bg-gray-200 border-0 py-1 px-3 focus:outline-none hover:bg-gray-300 rounded"></i>
                     </div>
                     <div>
                         <i class="bi bi-bell"></i>
                     </div>
+
+                    <div class="icon" id="icon" >  <a href="#" onclick="home()" >
+                        <i class="bi bi-list icon"></i></a></div>
                 </div>
             </div>
         </header>
@@ -52,20 +80,22 @@
 
         <div class="border-2 border-gray-200 border-t-0">
 
-<br/><br/><br/>
+<br/><br/>
 <!-- IZQUIERDA y derecha  -->
 
 
-<div style="display: block; width: 90%; min-width: 500px; ">
-  <div style="display: block; width: 100%">
-    <h2 class="ml-6 text-2xl 	font-weight: 900 text-black-900 text-black-900 dark:text-black font-weight: 900">
+
+
+<div class="contain" >
+  <div class="left">
+    <h2 class=" text-2xl 	font-weight: 900 text-black-900 text-black-900 dark:text-black font-weight: 900  mx-auto   sm::rounded-md  sm:p-6">
       Team members  </h2>
-      <p class="text-base ml-6 text-gray-400 whitespace-nowrap dark:text-gray ">
+      <p class="ml-6 text-gray-400  mx-auto   sm::rounded-md   ">
 
         Manage your team members and their account permissions here.
       </p>
   </div>
-  <div style="display: inline-block; text-align: right; width: 100%">
+  <div class="right sm:text-center xl:text-right sm:rounded-md">
     <button class=" m-0 rounded-lg border-2  h-10 px-2 outline-0 	"> <i class="bi bi-plus"></i>
       Add team member</button>
   </div>
@@ -76,15 +106,14 @@
 
 <!-- fin IZQUIERDA y derecha  -->
 
-      <br/> 
+      
 
 
      
 
 
-
-      <div class="ml-6 linea">
-      <button class=" m-0 rounded-l-lg border-2  h-10 px-2 outline-0 	"> My details</button>
+      <div class="sm:rounded-md  sm:p-8   linea ">
+      <button class=" m-0 rounded-l-lg border-2   border-2 h-10 px-2 outline-0  "> My details</button>
       <button class=" border-2 mx-0 h-10 px-2 	border-l-0 outline-0 " > Profile </button> 
       <button class=" border-2 h-10 px-2 border-l-0"  >  Password </button>
       <button class=" border-2 h-10 px-2 border-l-0 bg-gray-300">Team </button> 
@@ -94,18 +123,16 @@
        <button class=" border-2 h-10 px-2 border-l-0">Integrations </button> 
        <button class="rounded-r-lg border-2 h-10 px-2 border-l-0" >API</button>
       </div>
- 
+    
 
      
-
-      
 
 
 
 
             <!-- Usuarios 1  -->
         <section class="text-gray-600 body-font">
-            <div class="container ml-6 flex flex-col">
+            <div class="container flex flex-col p-6 mx-auto   sm::rounded-md  sm:p-6  ">
                 <div class="lg:w-6/6 ">
                     <div class="flex flex-col sm:flex-row ">
                         <div class="sm:w-1/3  sm:pr-8 sm:py-8">
@@ -344,7 +371,7 @@
 
  <!-- Usuarios 2  -->
  <section class="text-gray-600 body-font">
-  <div class="container   ml-6 flex flex-col">
+  <div class="container   flex flex-col p-6 mx-auto   sm::rounded-md  sm:p-6 ">
       <div class="lg:w-6/6 ">
           <div class="flex flex-col sm:flex-row ">
               <div class="sm:w-1/3  sm:pr-8 sm:py-8">
@@ -581,9 +608,15 @@
 
 
 
+<div class="p-4 mx-auto  sm:shadow-md sm::rounded-md  sm:p-6 ">
+   
+  </div>
+
+<br/>
 
 
 </div>
+
 
 <!-- Usuarios 2  -->
 </body></html>

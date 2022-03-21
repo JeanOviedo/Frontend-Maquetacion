@@ -1,6 +1,80 @@
 .linea {
    
     display: flex;
+    padding-left: 3rem;
   }
   
  
+  .contain {
+    display: flex;
+    margin: 1em;
+  }
+  
+  .left {
+    margin: 2px;
+    width: 50%;
+    border-radius: 9px;
+    padding: 1em;
+
+  }
+  
+  .right {
+    margin: 2px;
+    width: 50%;
+   
+    border-radius: 9px;
+    padding: 1em;
+  
+  }
+
+  .topnav .icon {
+    display: none ;
+  }
+
+  #icon { display: none;}
+ 
+  
+@media only screen and (max-width: 800px) {
+
+
+  #menu { display: none;}
+  #icon { display: block;}
+  .linea {
+   text-align: center;
+    font-size: 6px;
+    padding-left: 0px;
+    padding: 2px;
+    align-items: center; 
+    justify-content: center;
+    text-align: center;
+  }
+  .contain {
+    display: inline-block;
+    align-items: center; 
+    justify-content: center;
+    text-align: center;
+    width: 100%;
+    margin: 1px;
+  }
+
+  .left {
+    margin: 2px;
+    width: 100%;
+    border-radius: 9px;
+    padding: 1em;
+
+  }
+  
+  .right {
+    margin: 2px;
+    width: 100%;
+   
+    border-radius: 9px;
+    padding: 1em;
+  
+  }
+  
+
+}
+
+
